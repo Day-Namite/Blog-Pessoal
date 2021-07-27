@@ -1,0 +1,12 @@
+.nav-style {
+    background-color: violet;
+}
+
+.fs {
+    font-size: 16pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+a {
+    cursor: pointer;
+}

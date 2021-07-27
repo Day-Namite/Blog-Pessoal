@@ -12,14 +12,18 @@
     
     .fab {
         font-size: 35pt;
-        color: aliceblue;
+        color: whitesmoke;
         padding: 10px;
     }
     
-    .fa-github-alt :hover {
+    .fa-github-alt:hover {
         color: black;
     }
     
-    .fa-linkedin :hover {
+    .fa-linkedin:hover {
         color: #0e76a8;
+    }
+    
+    .cor {
+        background-color: rgb(68, 66, 70);
     }

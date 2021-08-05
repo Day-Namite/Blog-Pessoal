@@ -1,0 +1,95 @@
+<div class="container-fluid">
+
+    <div class="row bg-secondary d-flex align-items-center">
+
+        <div class="col-md-6">
+            <div class="row  d-flex justify-content-center">
+                <div class="col-md-6">
+                    <h1 class="fs-54">Seja bem vindo(a)!</h1>
+                    <h5 class="fs-18">Expresse seus pensamentos e opiniões</h5>
+
+                </div>
+
+                <div class="row d-flex justify-content-center mt-3 mb-5">
+
+                    <div class="col-md-6 ">
+
+                        <button class="btn btn-light m-3" data-bs-toggle="modal" data-bs-target="#novaPublicacao">Nova Publicação</button>
+                        <a class="btn btn-outline-light" href="#publicacoes">Ver Pubicações</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <img src="../../assets/img/Preferences-rafiki.png" alt="" width="500px" height="500px">
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5 mt-5" id="publicacoes">
+    <nav>
+        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+
+            <button class="nav-link active text-secondary font-weight-bold" id="nav-todasPublicacoes-tab" data-bs-toggle="tab" href='#todasPublicacoes' data-bs-target="#todasPublicacoes" type="button" role="tab" aria-controls="nav-todasPublicacoes" aria-selected="true">Todas Publicações</button>
+
+            <button class="nav-link text-secondary font-weight-bold" id="nav-minhasPublicacoes-tab" data-bs-toggle="tab" href='#minhasPublicacoes' data-bs-target="#minhasPublicacoes" type="button" role="tab" aria-controls="nav-minhasPublicacoes" aria-selected="false">Minhas Publicações</button>
+
+            <button class="nav-link text-secondary font-weight-bold" id="nav-publicacoesTema-tab" data-bs-toggle="tab" href='#publicacoesTema' data-bs-target="#publicacoesTema" type="button" role="tab" aria-controls="nav-publicacoesTema" aria-selected="false">Publicações por Tema</button>
+        </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+
+        <div class="tab-pane fade show active" id="todasPublicacoes" role="tabpanel" aria-labelledby="nav-todasPublicacoes-tab">
+            Todas as publicações
+        </div>
+
+        <div class="tab-pane fade" id="minhasPublicacoes" role="tabpanel" aria-labelledby="nav-minhasPublicacoes-tab">Minhas Publicações</div>
+
+        <div class="tab-pane fade" id="publicacoesTema" role="tabpanel" aria-labelledby="nav-publicacoesTema-tab">Publicações por Tema</div>
+    </div>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="novaPublicacao" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="novaPublicacao" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="novaPublicacao">Nova Publicação</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" class="form-control" id="titulo" placeholder="Digite o Título">
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo">Texto</label>
+                    <textarea class="form-control" name="texto" id="texto" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="tema">Escolha um Tema ou  <a data-bs-dismiss="modal" routerLink='/tema'>Cadastre um novo</a>: </label>
+                    <select name="tema" id="tema" class="form-control">
+                    <option value="">Temas</option>
+                </select>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-success">Publicar</button>
+            </div>
+        </div>
+    </div>
+</div>
